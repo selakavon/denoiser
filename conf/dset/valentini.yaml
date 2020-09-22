@@ -2,7 +2,7 @@ dset:
   train: /kaggle/working/egs/valentini/tr
   valid: /kaggle/working/egs/valentini/tr
   test: /kaggle/working/egs/valentini/test
-  noisy_json: /kaggle/working/egs/valentini/ts/noisy.json
+  noisy_json:
   noisy_dir:
   matching: sort
 pesq: 1
