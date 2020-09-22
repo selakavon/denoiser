@@ -1,5 +1,5 @@
 defaults:
-  - dset: debug
+  - dset: valentini_sample
   - hydra/job_logging: colorlog
   - hydra/hydra_logging: colorlog
 
@@ -17,14 +17,14 @@ shift_same: false   # shift noise and clean by the same amount
 revecho: 0  # add reverb like augment
 
 # Logging and printing, and does not impact training
-num_prints: 5
+num_prints: 1
 device: cuda
-num_workers: 5
-verbose: 0
+num_workers: 8
+verbose: 1
 show: 0   # just show the model and its size and exit
 
 # Checkpointing, by default automatically load last checkpoint
-checkpoint: true
+checkpoint: false
 continue_from: '' # Path the a checkpoint.th file to start from.
                   # this is not used in the name of the experiment!
                   # so use a dummy=something not to mixup experiments.
@@ -54,8 +54,8 @@ loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
-epochs: 400
-batch_size: 64
+epochs: 5
+batch_size: 1
 
 # Models
 model: demucs # either demucs or dwave
