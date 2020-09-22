@@ -1,8 +1,8 @@
 dset:
-  train: egs/valentini/tr
-  valid: egs/valentini/tr
-  test: egs/valentini/test
-  noisy_json: egs/valentini/ts/noisy.json
+  train: /kaggle/working/egs/valentini/tr
+  valid: /kaggle/working/egs/valentini/tr
+  test: /kaggle/working/egs/valentini/test
+  noisy_json: /kaggle/working/egs/valentini/ts/noisy.json
   noisy_dir:
   matching: sort
 pesq: 1
