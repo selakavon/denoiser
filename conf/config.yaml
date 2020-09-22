@@ -54,8 +54,8 @@ loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
-epochs: 5
-batch_size: 1
+epochs: 1
+batch_size: 64
 
 # Models
 model: demucs # either demucs or dwave
